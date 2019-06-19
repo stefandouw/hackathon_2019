@@ -34,6 +34,7 @@ String getCurrentCardNumber(){
   for (int i = 0; i < mfrc522.uid.size; i++){
     card += mfrc522.uid.uidByte[i];
   }
+//  Serial.println("Debug: card number: " + card);
   return card;
 }
 
